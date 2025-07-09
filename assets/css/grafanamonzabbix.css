@@ -1,0 +1,122 @@
+/* Estilos para integração com Grafana */
+
+/* Container do iframe do Grafana */
+.grafana-container {
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Iframe do Grafana */
+.grafana-iframe {
+    border: none;
+    display: block;
+    background: #fff;
+    min-height: 800px;
+}
+
+/* Mensagem de erro do iframe */
+#iframe-error {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 2px dashed #dee2e6;
+}
+
+/* Informações sobre o Grafana */
+.grafana-info {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+}
+
+/* Mensagem quando Grafana não está configurado */
+.grafana-not-configured {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 4px;
+}
+
+/* Estilos para formulário de configuração */
+#grafana-config-form {
+    max-width: 800px;
+}
+
+#grafana_url {
+    font-family: monospace;
+}
+
+/* Botões personalizados */
+button[onclick*="window.open"] {
+    transition: all 0.3s ease;
+}
+
+button[onclick*="window.open"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Avisos e dicas */
+.grafana-tip {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    border-left: 4px solid #ffc107;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Instruções técnicas */
+.grafana-instructions {
+    background: linear-gradient(135deg, #e7f3ff 0%, #cce7ff 100%);
+    border-left: 4px solid #007bff;
+}
+
+.grafana-instructions pre {
+    font-size: 13px;
+    line-height: 1.4;
+    overflow-x: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .grafana-iframe {
+        height: 600px !important;
+    }
+    
+    .grafana-container {
+        margin: 10px 0;
+    }
+    
+    .grafana-not-configured {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+    
+    button[onclick*="window.open"] {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Loading indicator */
+.grafana-iframe:empty::before {
+    content: "🔄 Carregando Grafana...";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    color: #666;
+    font-size: 16px;
+}

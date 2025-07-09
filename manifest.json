@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2.0,
+    "id": "grafanamonZabbix",
+    "name": "Grafana MonZphere Zabbix",
+    "version": "1.0",
+    "description": "Grafana MonZphere Zabbix",
+    "author": "monzphere.com",
+    "namespace": "GrafanaMonZabbix",
+    "actions": {
+        "grafanaconfig.view": {
+            "class": "GrafanaConfig",
+            "view": "grafanaconfig.view"
+        },
+        "grafanaconfig.save": {
+            "class": "GrafanaConfigSave"
+        },
+        "grafanaviewer.view": {
+            "class": "GrafanaViewer",
+            "view": "grafanaviewer.view"
+        }
+    },
+    "assets": {
+        "css": [
+            "grafanamonzabbix.css"
+        ]
+    }
+}
