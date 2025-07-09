@@ -47,7 +47,7 @@ Este módulo permite a integração do Grafana dentro do Zabbix, proporcionando 
 ### 1. Instalar o Módulo
 ```bash
 # Copie os arquivos para o diretório de módulos do Zabbix
-cp -r treinamento-php /usr/share/zabbix/modules/
+cp -r GrafanaConect /usr/share/zabbix/modules/
 chown -R www-data:www-data /usr/share/zabbix/modules/GrafanaConect
 ```
 
