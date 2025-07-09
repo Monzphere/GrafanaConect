@@ -2,6 +2,9 @@
 
 Este módulo permite a integração do Grafana dentro do Zabbix, proporcionando uma experiência unificada para monitoramento e visualização de dados com interface que ocupa todo o espaço disponível.
 
+![image](https://github.com/user-attachments/assets/2e679b97-8006-4e72-a4aa-c4c8c135ca79)
+
+
 ## 🚀 Funcionalidades
 
 ### 1. Configuração do Grafana
