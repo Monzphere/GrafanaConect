@@ -44,7 +44,7 @@ Este módulo permite a integração do Grafana dentro do Zabbix, proporcionando 
 ```bash
 # Copie os arquivos para o diretório de módulos do Zabbix
 cp -r treinamento-php /usr/share/zabbix/modules/
-chown -R www-data:www-data /usr/share/zabbix/modules/treinamento-php
+chown -R www-data:www-data /usr/share/zabbix/modules/GrafanaConect
 ```
 
 ### 2. Configurar HTTPS no Grafana (Recomendado)
@@ -87,8 +87,6 @@ treinamento-php/
 ├── config/                      # ⚙️ (Criado automaticamente)
 │   └── grafana_config.json     # Configuração salva
 ├── setup_grafana_https.sh      # 🔧 Script de configuração HTTPS
-├── CONFIGURAR_HTTPS_GRAFANA.md # 📖 Guia de configuração HTTPS
-├── GRAFANA_IFRAME_TROUBLESHOOTING.md # 🔍 Solução de problemas
 ├── manifest.json               # 📦 Configuração do módulo
 ├── Module.php                  # 🏗️ Classe principal do módulo
 └── README.md                   # 📚 Esta documentação
